@@ -1,0 +1,29 @@
+# cloud_base Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2026-02-16
+
+## Active Technologies
+
+- Java 17 + [e.g., Spring Boot, Vue.js, etc.] (003-org-auth)
+
+## Project Structure
+
+```text
+src/
+tests/
+```
+
+## Commands
+
+# Add commands for Java 17
+
+## Code Style
+
+Java 17: Follow standard conventions
+
+## Recent Changes
+
+- 003-org-auth: Added Java 17 + [e.g., Spring Boot, Vue.js, etc.]
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->

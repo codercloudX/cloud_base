@@ -5,6 +5,52 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+## Business Scenarios *(mandatory)*
+
+<!--
+  ACTION REQUIRED: Describe how this feature will be used in real-world situations.
+  Include specific scenarios that illustrate the value and context of the feature.
+-->
+
+[Detailed description of business scenarios where this feature will be used]
+
+## User Roles *(mandatory)*
+
+<!--
+  ACTION REQUIRED: Identify all user roles that will interact with this feature.
+  Include their specific permissions and responsibilities related to the feature.
+-->
+
+- **[Role 1]**: [Description of the role and their interactions with the feature]
+- **[Role 2]**: [Description of the role and their interactions with the feature]
+
+## Feature Description *(mandatory)*
+
+<!--
+  ACTION REQUIRED: Provide a clear and concise explanation of what the feature does.
+  Include the primary goal and how it aligns with business objectives.
+-->
+
+[Clear and concise description of the feature]
+
+## Interaction Requirements *(mandatory)*
+
+<!--
+  ACTION REQUIRED: Detail how users will interact with the feature.
+  Include user flows, UI interactions, and any specific input/output requirements.
+-->
+
+[Details of user interactions with the feature]
+
+## Rule Requirements *(mandatory)*
+
+<!--
+  ACTION REQUIRED: Specify the business rules and constraints that govern the feature.
+  Include validation rules, business logic constraints, and any regulatory requirements.
+-->
+
+[Business rules and constraints for the feature]
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

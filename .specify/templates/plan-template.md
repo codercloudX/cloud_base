@@ -17,21 +17,126 @@
   the iteration process.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Java 17  
+**Primary Dependencies**: [e.g., Spring Boot, Vue.js, etc.]  
+**Storage**: MySQL  
+**Testing**: JUnit 5 (backend), Vitest (frontend)  
+**Target Platform**: Web  
+**Project Type**: Web application (frontend + backend)  
+**Performance Goals**: [domain-specific, e.g., 1000 req/s, <200ms response time]  
+**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory]  
+**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens]
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] Code Quality First: Ensure coding standards are followed
+- [ ] Test-Driven Development: Verify test plan is in place
+- [ ] User Experience Consistency: Confirm UI design guidelines are followed
+- [ ] Performance Excellence: Validate performance requirements are defined
+- [ ] Security by Design: Ensure security considerations are included
+
+## Functional Requirements
+
+<!--
+  ACTION REQUIRED: Breakdown of the feature into specific functional components.
+  Derived from the feature specification.
+-->
+
+- **[FR-001]**: [Functional requirement derived from spec]
+- **[FR-002]**: [Functional requirement derived from spec]
+- **[FR-003]**: [Functional requirement derived from spec]
+
+## Feature Checklist
+
+<!--
+  ACTION REQUIRED: Comprehensive list of tasks needed to implement the feature.
+  Include all development, testing, and documentation tasks.
+-->
+
+- [ ] Backend API implementation
+- [ ] Frontend component development
+- [ ] Database schema changes
+- [ ] Unit tests
+- [ ] Integration tests
+- [ ] End-to-end tests
+- [ ] Documentation update
+- [ ] Performance testing
+- [ ] Security review
+
+## Feature Structure
+
+<!--
+  ACTION REQUIRED: Technical architecture and component breakdown.
+  Include both backend and frontend components.
+-->
+
+### Backend Structure
+
+```text
+backend/
+├── src/
+│   ├── main/java/
+│   │   ├── com/
+│   │   │   └── cloudbase/
+│   │   │       ├── controller/
+│   │   │       ├── service/
+│   │   │       ├── repository/
+│   │   │       └── model/
+│   │   └── resources/
+│   └── test/java/
+```
+
+### Frontend Structure
+
+```text
+frontend/
+├── src/
+│   ├── components/
+│   ├── views/
+│   ├── router/
+│   ├── store/
+│   └── services/
+└── tests/
+```
+
+## Interface Design
+
+<!--
+  ACTION REQUIRED: ASCII diagrams illustrating the user interface and interactions.
+  Include main screens and user flows.
+-->
+
+### Main Screen
+
+```
++----------------------------------------+
+|              Header                    |
+|                                        |
+| [Logo]              [User] [Settings]  |
++----------------------------------------+
+|                                        |
+|  +-------------+  +------------------+ |
+|  |             |  |                  | |
+|  |  Sidebar    |  |  Main Content    | |
+|  |             |  |                  | |
+|  |  - Menu 1   |  |  +------------+  | |
+|  |  - Menu 2   |  |  | Component  |  | |
+|  |  - Menu 3   |  |  +------------+  | |
+|  |             |  |                  | |
+|  +-------------+  +------------------+ |
+|                                        |
++----------------------------------------+
+|              Footer                    |
++----------------------------------------+
+```
+
+### User Flow
+
+```
+User → Login → Dashboard → Feature Page → Action → Confirmation → Result
+```
 
 ## Project Structure
 
@@ -48,27 +153,8 @@ specs/[###-feature]/
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
 backend/
 ├── src/
 │   ├── models/
@@ -82,17 +168,9 @@ frontend/
 │   ├── pages/
 │   └── services/
 └── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Web application structure with separate backend and frontend directories.
 
 ## Complexity Tracking
 
