@@ -1,0 +1,40 @@
+终端：安装pip python.exe -m pip install --upgrade pip
+
+终端：python -m  pip install ub
+
+终端：python -m uv tool install specify-cli --from git+https://github.com/github/spec-kit.git 下载speckit
+
+终端：specify init here
+
+/speckit.constitution  创建专注于代码质量、测试标准、用户体验一致性和性能要求的准则，具体要求如下：
+1、specify需求环节必须包含业务场景、用户角色、功能描述、交互需求、规则需求；
+2、plan设计 环节必须具有功能需求、功能清单、功能结构、界面设计ascii图等内容；
+3、数据库使用达梦数据库；
+4、jdk使用jdk 17；
+
+/speckit.specify 某市人力资源和社会保障局人事处工作人员需管理全市事业单位人才信息库。工作人员需通过系统实现人才信息的日常维护：支持新增人才基本信息、编辑现有信息、删除无效信息；提供分页查询功能，便于快速定位人才；支持从Excel文件批量导入人才数据，以及将查询结果导出为Excel文件用于存档或上报。
+
+/speckit.clarify 需求澄清
+
+/ascii-design  @specs/001-talent-management/spec.md  使用skill创造设计图
+
+/speckit.plan 
+1、请先解析项目架构及相关技术
+2、java后端规范可参照@odin-platform/docs/后端代码规范文档.md 
+3、前端规范可参照@odin-web-ui-plus/docs/前端代码规范文档.md 
+4、数据库表设计，请在库表前增加***_前缀
+5、功能原型图请参考@ascii-ui-design/talent-management-excel-import-export_20260207.txt @ascii-ui-design/talent-management-form-page_20260207.txt @ascii-ui-design/talent-management-main-dashboard_20260207.txt @ascii-ui-design/talent-management-operation-log_20260207.txt @ascii-ui-design/talent-management-query-page_20260207.txt
+
+/speckit.tasks 阶段任务拆分
+
+/speckit.analyze 作为产品经理，请分析现在需求与设计是否仍存在风险,并将报告写入项目中存档
+
+/speckit.checklist 创建检查清单（即测试用例）
+
+前端启动
+终端：npm install 安装前端依赖
+终端：npm dev run
+
+后端启动（另一个项目service没有许可证，所以要在这个项目里启动才有效）
+终端：cd .\odin-web\
+终端：$env:JAVA_HOME = "C:\Program Files\Java\jdk-17.0.18"; $env:PATH = "$env:JAVA_HOME\bin;" + $env:PATH; mvn spring-boot:run
